@@ -231,6 +231,7 @@ syntax:
 (function(){
  // code of block to be executed
 })();
+
 setInterval()
 -----------------
 - this function continously execute in particular interval of time
@@ -238,12 +239,14 @@ syntax:
 setinterval(function(){
  // code block to execute
 }, time in milliseconds)
+
 setTimeout()
 -----------------
 - this function execute only once, when the timeout reaches
 setTimeout(function(){
  // code to be executed
 }, time in milliseconds)
+
 callback functions
 -------------------
 A callback function is js is function , that is passed as an argumnet to another
@@ -252,9 +255,11 @@ and it is executed after a certain task is finished.
 Callbacks are a way to ensure that certain code doesn't execute until
 a specifc task is completed, allowing for better control over the flow of our
 program
+
 Nested function
 -----------------
 A function is defined within another function
+
 Arrow Function
 ------------------
 - also called fat arrow function
@@ -269,6 +274,7 @@ var sum = (a,b)=>{
  console.log(a+b)
 }
  sum(2,3)
+ 
 - it provide shorter syntax for single expression
 - ie: if the arrow function body consists of a single expression, we can omit the
  curly braces and the return keyword. The result of expression will be
@@ -276,6 +282,7 @@ var sum = (a,b)=>{
  eg:
  var multiply=(a,b)=>a*b;
  multiply(3,5)
+
 Hoisting
 --------------------
 Hoisting is a Javascript mechanism, where variables and function declarations are
