@@ -286,10 +286,12 @@ var sum = (a,b)=>{
 Hoisting
 --------------------
 Hoisting is a Javascript mechanism, where variables and function declarations are
-moved to
-the top of their containing scope before the code executes.
+moved to the top of their containing scope before the code executes.
+
 This means that we can access variables and functions before they are declared;
+
 While Javascript execute a program, mainly it has 2 phases
+
 1) memory creation phase
  - this the first step in executing a js program
  - in this phase, javascript allocate memory for variables and functions
@@ -297,13 +299,18 @@ While Javascript execute a program, mainly it has 2 phases
 2) execution phase
  - after memory creation phase, execution phase starts
  - assigning values and function calling/invocation happens in this phase
+
 Functions expressions and arrow functions cannot be hoisted
+
 because, in arrow function and function expression, the functions are assigned to a
 variable.
+
 so in memory creation phase, this variables are added to the memory with value
 undefined,
+
 only at the execution phase, the corresponding function definitions are assigned to
 that varaibles
+
 callback hell
 -------------------
 - it is also called pyramid of doom
