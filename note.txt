@@ -318,6 +318,7 @@ callback hell
  callback functions are nested within multiple level of operations
  - simply nested callback
 - if any one of the callback function fails, the entire code fails
+
  function function1(function(result1)){
  function2(result1, function(result2){
  function3(result2, function(result3)){
@@ -328,25 +329,32 @@ callback hell
  mechanis, to solve callback hell
  1) using promise
  2) using async await
+
  Arrays
  ----------------
  - special type of variable that can hold more than one value at a time
+
  - syntax: var varaible_name=[value1, value2, value3,...]
+
  - values are seperated by comma
  - eg: var fruits=['apple','orange','kiwi']
  - eg: var marks=[23,45,34]
+
  - array can hold multiple data type values
  - eg: var arr=["innova",56, true]
+
  - each element in an array is identified by index value
  - index is start from 0
  - .length can be used to find length of an array
  - eg: fruits.length
  - index range from 0 to length-1
+
  main 4 built in method for array operations:
  1) push: insert an item into last position of an array
  2) pop: remove an item from the last position of an array
  3) shift: remove an item from the first position
  4) unshift: insert an item into first position
+
 Different ways to access elements in an array
 ---------------------------------------------
 1) for loop
@@ -361,6 +369,7 @@ Different ways to access elements in an array
  for(var item of arr){
  console.log(item)
  }
+ 
 Different array methods
 -------------------------
 1) length
