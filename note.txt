@@ -376,44 +376,51 @@ Different array methods
 2) indexOf : to return the index of particular item
  if item present in the array, it return its index value
  if item is not present, it return -1
+
 var, let, const
 ==========================
 The above threes are used for variable declarartion. But they have different
-behavior in terms
-of scope, hoisting and mutability
+behavior in terms of scope, hoisting and mutability
+
 scope: boundary in which variables can be accessed
+
 var
 =======
 1) scope: Function scoped variables are declared with 'var' are scoped to the
-function
-in which they are declared, or globally if declared outside of a function
+function in which they are declared, or globally if declared outside of a function
 (function scoped or Global scoped)
+
 2) Hoisting: 'var' varaibles are hoisted to the top of their scope and js
-initialize its
-value as undefined
+initialize its value as undefined
+
 3) Re Declaration: we can re-decalre var inside same scope. also we can re-assign
 values
+
 let
 ======
 1) scope: Block scoped, variable declared with let are limited to block in which
-they are
-declared (eg: {} )
+they are declared (eg: {} )
+
 2) Hoisting: Let are hoisted to the top of their block, But are not initalized with
 undefined value. JS kept this let variables in temperal dead zone. So accessing
-them
-before delcaration results in 'reference error'
+them before delcaration results in 'reference error'
+
 3) Re-Declarartion: Not allowed within the same scope, but value can be re-assigned
+
 const
 ===========
 1) Scope: same as let. variable declared with const are limited to block in
  which they are declared (eg: {} )
+
 2) Hoisting: Let are hoisted to the top of their block, But are not initalized with
-undefined value. JS kept this let variables in temperal dead zone. So accessing
-them
+undefined value. JS kept this let variables in temperal dead zone. So accessing them
 before delcaration results in 'reference error'
+
 3) Re-delcaration : Not allowed within the same scope
+
 4) Assignment: Must be initialized at the time of declaration and cannot be
 re-assigned
+
 sort
 ---------
 - in built js method used for sorting an array
@@ -428,12 +435,14 @@ for sorting string array in alpahbetic order:
 arr.sort();
 for sorting string array in descending order:
 arr.sort((a, b) => b.localeCompare(a) )
+
 forEach()
 ----------
 - used to iterate over each element in an array
 arr.forEach((element)=>{
  console.log(element)
 })
+
 difference between array iteration using for loop and forEach
 --------------------------------------------------------------
 - Both are used to iterate over each element in an array
