@@ -451,47 +451,48 @@ reaches
 - we can have better control over the elements in array (i value can be define on
 our needs)
 - we can manually set the the value of i and length
+
 map()
 -----
 map method is used to create a new array by applying a function to each element
 in an existing array. It doesn't modify the original array, but instead it returns
-a new array
-containing the results of applying function to each element.
+a new array containing the results of applying function to each element.
+
 const result = arr.map((elemen)=>{
  // code block to be executed
 })
+
 eg: let arr = [1,2,3,4,5];
 const result = arr.map((ele)=>ele*2)
-// result array contains the new array wich hold
-the results of the function
+// result array contains the new array wich hold the results of the function
+
 filter()
 ------------
-filter method is used to create a new arry containing only
-the elements that satisfies a specific condition
-- it does not modify the original array, instead it create
-a new array
+filter method is used to create a new arry containing only the elements that satisfies a specific condition
+- it does not modify the original array, instead it create a new array
+
 syntax:
 const result = arr.filter((element)=>{
  // filter condition
 })
+
 reduce()
 ------------
-reduce method execute function over all elements in the
-array and accumulates them into a single value
+reduce method execute function over all elements in the array and accumulates them into a single value
+
 syntax:
 const result = arr.reduce((accumulator, currentvalue)=>{
  // code to be executed
 },initialvalue of accumulator)
 eg:
 sum of numbers in an array
+
 find()
 -----------
-find method is used to retrive the first element in an
-array that satisfies the provided condition
-- it iterate over each element in the array and returns the
-first element for which the condition is true
-- if no element in the array satisfies the provided condition
-'undefined' is returned for
+find method is used to retrive the first element in an array that satisfies the provided condition
+- it iterate over each element in the array and returns the first element for which the condition is true
+- if no element in the array satisfies the provided condition 'undefined' is returned 
+
 includes()
 ------------
 it is a built in method in javascript for arrays.
