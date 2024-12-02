@@ -501,14 +501,17 @@ It returns trus, if the element is found and false, if the element not found
 syntax:
 arr.inculdes(value{to check})
 returns true or false
+
 some()
 ----------
 some() method in js is used to check whether atleast one element in an array
  satisfies specific condition
  - it return true or false
+
  syntax: arr.some((element)=>{
  // condition to check
 })
+
 slice
 ----------
 - slice method is used to extract a section of an existing array and it
@@ -518,32 +521,38 @@ returns a new array
  end: it will not take the end index, just one value behind the end index,
  end index in not mandatory
  if no end index , it take all values upto end
+
 splice
 ---------
-splice method is used to add or remove array elelements
+splice method is used to add or remove array elements
 it modifies the original Array
 syntax:
 array.splice(index, count, item1, item2,...)
+
 reverse()
 ----------
 reverse array elements
 syntax: arr.reverse()
+
 Nested array
 ---------------
 array inside another array
 eg: let arr = [1,2,[3,4],5,6,[7,8]];
- arr1= [1,2,1,2,1,2,3]]
+ arr1= [1,2,[1,2,[1,2,3]]]
+
 flat()
 ---------
 flat method is used to convert nested array into specific depth
 let x= [1,[1,[1,[1,[1]]]]]
 x.flat(Infiity) - if depth is unknown we can give depth as Infinity
+
 Linear Search
 --------------------
 - also known as sequential Search
 - Simple algorithm it uses, that checks each element in an array sequentially
  until the desired element is found or the array ends
  - linear search can be applied on un-sorted array
+ 
  Binary Search
  -----------------
  - Binary search is an efficient algorithm for finding an item from a sorted array
