@@ -563,25 +563,24 @@ the first half
  - if the value of target is greater than the mid, search continues in the second
 half
  - if the target value is mid, then it returns the value
+
  closure property
  --------------------
- Consider we have an outer function and inside that outer function,
- there is an inner function.
- The inner function has access to its own variables, its outer function
- variables and globally decalred variables
+ Consider we have an outer function and inside that outer function, there is an inner function.
+ The inner function has access to its own variables, its outer function variables and globally decalred variables
+
  String methods
  --------------------
  1) toLowerCase(): to convert string to lowercase
+
  2) toUpperCase(): to convert string to uppercase
+
  3) trim(): to remove white space from start and end of a string
  trimStart(): to remove white space from start
  trimEnd(): to remove white space from end
-4) startsWith: to check whether a string starts with
- specific character/word. It is case sensitive
-5) endsWith: to check whether a string ends with
- specific character/word. It is case sensitive
-6) includes : to check whether a string contains
- specific character/word. It is case sensitive
+4) startsWith: to check whether a string starts with specific character/word. It is case sensitive
+5) endsWith: to check whether a string ends with specific character/word. It is case sensitive
+6) includes : to check whether a string contains specific character/word. It is case sensitive
 7)charAt(index): to return charcter at specifc index;
 8) concat: for string concatenation/joining
  str1.concat(str2)

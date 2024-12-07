@@ -1,6 +1,7 @@
 //slice       0        1        2         3          4
 let fruits=['apple','benana','orange','pineapple','kiwi']
 let resultArray=fruits.slice(1,3)
+//creating new array
 console.log(resultArray);
 
 // [ 'benana', 'orange' ]
