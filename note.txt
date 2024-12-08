@@ -589,20 +589,26 @@ half
  split(seperator)
  ** join( ): to convert array into string
  join(sperator)
+
 javascript objects
 ----------------
 - javascript objects are collection of key value pairs
 - it provide more clarity to the data stored
+
 - syntax: var variable_name = {
  // key:value pairs
 }
  var arr = ['john',28,true]
+
  var person = {
- name:'john',
- age:28,
- isMajor:true }
+     name:'john',
+     age:28,
+     isMajor:true
+     }
+
 value can be string, integer, boolean, object, array, function
 comma is used to seperate each key-value collection
+
 Different ways to create an Object
 --------------------------
 1) Using object literal
@@ -611,28 +617,37 @@ Different ways to create an Object
  manufacturer:'Toyota',
  price:2400000
  }
+
 2) using new Object() syntax
+
  let person = new Object();
  person.name= "Todd";
  person.age= 27;
  person.email='abc@gmail.com'
+
 Different ways of accessing object properties
 ---------------------------------------------
 1) Dot notation
  eg: console.log(person.name)
+
 2) Bracket Notation
  eg: console.log(person['name']);
+
 Adding new properties/keys
 --------------------
 1) Dot
  person.mobileNumber = 9744468168
+
 2) Bracket
  person['mobileNumber'] = 9744468168
+
 3) Object.assign(target,{key:value})
+
 Deleting a property/key
 ----------------------
 delete object_name.key
 eg: delete person.age
+
 Example of Object with methods
 -------------------------------
 let calculator = {
@@ -643,6 +658,7 @@ let calculator = {
  return a*b
   }
 }
+
 Checking for a particular property
 -------------------------------
 'key_name' in object_name
@@ -651,10 +667,12 @@ For getting all keys
 for(let key in object_name){
  console.log(key)
 }
+
 Update the value of a key
 ------------------------
 object_name.key = "newValue"
 object_name['key']= "newvalue"
+
 Nested Object
 ------------
 object inside an object
@@ -668,25 +686,31 @@ let person = {
  zipcode:34523
  }
 }
+
 // to access city
 person.address.city
+
 Get all keys
 -------------
 Object.keys(object_name)
 it returns an array
+
 Get all values
 -------------------
 Object.values(object_name)
 it returns an array
+
 Get combination of key value pairs
 -----------------------------------
 Object.entries(object_name)
 it returns an array
+
 Object.seal()
 -------------------
 This method is used to control the mutability of object
 - It prevent adding or removing properties
 - It allows modification for values of existing properties
+
 Object.freeze()
 -------------------
 This method is used to control the mutability of object
