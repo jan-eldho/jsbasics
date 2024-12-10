@@ -715,6 +715,7 @@ Object.freeze()
 -------------------
 This method is used to control the mutability of object
 - prevent adding, removing and modifying the properties
+
 Array of objects
 ---------------------
 - each element in an array is an object
