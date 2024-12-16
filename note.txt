@@ -733,11 +733,12 @@ eval() is a function used to evaluate or execute a string in javascript
 
 Exception Handling
 --------------------------
-exception:Run time errors
+exception: Run time errors
  - try-catch block is used to handle run time error
  - try: Code that might commit errors
  - catch: what to do if error occurs
  - finally (not mandatory): control will come to this block, in both the cases
+
 spread and rest operator (...)
 ------------------------------
 spread operator:
@@ -746,11 +747,14 @@ elements where it is used.
  eg:
  var array1=[1,2,3,4];
  var array2 = [...array1,5,6,7,8]
+
  var obj1={a:1,b:2}
  var obj2={...obj1,c:3,d:4}
+
 Rest operator:
  - mainly used for passing arguments to function
  - we are not sure about,how many arguments the function expecting
+
  Array Destructuring
 -------------------
 Array destructuring in JS used to unpack values from array and store it into a
@@ -760,11 +764,12 @@ let [a,b,c]=arr;
 console.log(a);
 console.log(b);
 console.log(c)
+
 Object Destructuring
 ---------------------------
- Object destructuring is used to unpack proerties value in to
- variable
+ Object destructuring is used to unpack proerties value in to variable
  - variable must be key name
+ 
  OOPS
  -------
  - Object oriented programming system
