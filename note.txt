@@ -772,23 +772,33 @@ Object Destructuring
  
  OOPS
  -------
+
  - Object oriented programming system
+
  procedural programming: programs created using functions and variables
- object oriented programming: It make use of class, object, methods, properties,
-constructor
+
+ object oriented programming: It make use of class, object, methods, properties, constructor
+
  Class: class is container that holds related methods, properties and constructor
+
  - class act as a blue print for creating object
+
  method: function inside a class is called method
+
  function keyword is not needed to define method
+
 properties: variables inside a class is called properties
  var, let, const keywords are not needed to define properties
 
 Object: instace of a class
  - it is created from class
+
 constructor- it is a function, used to initialize values to properties
+
 this - this keword is used to access methods and properties inside a class
 this- called instace variable
 this- refers to properties and methods inside that specific class
+
 Syntax to create a Class
 ------------------------
 class Class_name{
@@ -797,7 +807,9 @@ class Class_name{
  methods
 }
 - thses properties, constructor and methods are not mandatory, all are optional
+
 eg:
+
 class Student{
  name;
  age;
@@ -812,10 +824,11 @@ class Student{
 }
 const obj = new Student();
 obj.printDetails()
-- if constructor is expecting some argumnents, then we need to pass this parameters
-while creating the object
-- if any method inside the class expecting some argumnets, then pass the parameter
-while calling that method
+
+- if constructor is expecting some argumnents, then we need to pass this parameters while creating the object
+
+- if any method inside the class expecting some argumnets, then pass the parameter while calling that method
+
 Pillers Of OOPS
 -------------------
 1) Inheritance
