@@ -865,7 +865,7 @@ Pillers Of OOPS
 
  method inside child class overrides method in parent class
 
- 3) Abstarction:
+ 3) Abstraction:
 
  - It is hiding the complex implemetation details of a system and exposing only the essential methods and features
  eg:
@@ -881,38 +881,51 @@ Pillers Of OOPS
  1) Public
  2) Private
  3) Protected
+
  1) Public:
  - default access specifiers
  - The class memeber can be accessible from any where
 
  2) Protected:
- - class memeber is accessible inside that class and its sub classes(child
-class)
+ - class memeber is accessible inside that class and its sub classes(child class)
+
  3) Private:
  - class member is accessible only within that class
+
 Javascript With HtML
 -------------------------
+
 DOM (Document Object Model)
----
-- while browser loads a HTML page, it create a tree like structure with the
-containing
- html elements
+-----------------------------
+
+- while browser loads a HTML page, it create a tree like structure with the containing html elements
+
  - the tree consists of nodes, each node is an html element
+
  How to apply javascript in HTML file
  ------------------------------------
  1) internal
  <script></script>
  - it is better to use script after closing of body target
+
  2) external js
  <script src="url"></script>
+
 How to access html elements
 ----------------------------
+
 ) by tag name
+
  document.getElementsByTagName('tag_name')
+
  - it returns collection
+
  - collection is a data type created by browser, similar to array
+
  - we have to convert this collection into a normal Array for using it
+
  Array.from(collection_name)
+
  - then map each item in the array and apply the style
  eg:
  Array.from(collection_name).map(item=>item.style.color="green")
