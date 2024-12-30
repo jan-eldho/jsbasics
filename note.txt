@@ -914,7 +914,7 @@ DOM (Document Object Model)
 How to access html elements
 ----------------------------
 
-) by tag name
+1) by tag name
 
  document.getElementsByTagName('tag_name')
 
@@ -929,3 +929,55 @@ How to access html elements
  - then map each item in the array and apply the style
  eg:
  Array.from(collection_name).map(item=>item.style.color="green")
+
+ 2) by id
+  document.getElementById('id_name')
+  it return that specific html element
+  eg: x=document.getElementById('mainheader')
+      x.style.color='orange'
+
+3) by class name
+   document.getElementsByClassName('Class_name')
+
+   - it return collection
+   -collection is a data type created by browser,similar to array
+   - we have to convert this collection into a normal Array for using it
+    Array.from(collection_name)
+
+ - then map each item in the array and apply the style
+ eg:
+ Array.from(collection_name).map(item=>item.style.color="green")
+
+ 4) by Query selector
+    document.querySelector('tag_name/#id_name/.Class_name') 
+    -  it return that specific html element
+    - it only return the first html element that matches the condition 
+    eg:
+       x=document.querySelector('#mainheader')
+       x.style.backgroundColor='blue'
+
+5) by querySelector All
+   document.querySelectorAll('tag_name/#id_name/.Class_name')
+   -it return Node List (same as array)
+   - we need to convert the Node list to array for using it
+   - it return all the html elements that matches the condition
+
+   eg> x=document.querySelectorAll('.test')
+       Array.from(x).map(item=>item.style.color='blue')
+
+
+   .innerHTML 
+   - used to acccess content of a html element    
+
+   Events
+   ......
+   Action performed by the user that leads to dom updation
+   eg: button clicks
+       :mouse hover
+       :keydown
+
+     methods: onClick()  , mousehover()
+
+
+
+
