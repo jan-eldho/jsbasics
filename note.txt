@@ -978,6 +978,57 @@ How to access html elements
 
      methods: onClick()  , mousehover()
 
+     local storage and session storage
+     ...................................
+     1) Local storage
+        it is a browser memory used to store data permanetly in browser
+        data still exists in the local stoarge even if we close the tab,
+        close the browser or shutdown the sysytem
+
+        value store as key value pairs
+        key and value must string
+        -JSON.stringify() is used to convert objet to string
+        - JSON.parse() is used to convert string to original object
+
+        Operation on local storage
+        ..........................
+
+        localStorage.setItem("key":"value")
+        - to store an item into local stoarage
+        localStorage.getItem("key")
+        - to retrive value from the local stoarge corresponding to that key
+         localStorage.removeItem("key")
+         - to delete an item from the local stoarge
+         -size limit 5MB
+
+         usecase
+         .....
+         -used for storing data that needs to persist permanetly
+         - to store user perference,setting,themes,user authentication token
+
+        2) sessionStoarge
+         .............
+         -it is also a browser memory
+         - data stord in session stoarge is only available for the duration of that page session
+         - it is deleted,when page sesssion ends,which means usr close the tab or bowser window
+         -size limit 5MB
+
+         Operation on sessionStoarge
+        ..........................
+
+        sessionStorage.setItem("key":"value")
+        - to store an item into session stoarage
+       sessionStorage.getItem("key")
+        - to retrive value from the session stoarge corresponding to that key
+         sessionStorage.removeItem("key")
+         - to delete an item from the session stoarge
+         -size limit 5MB
+
+         usecase...
+         used to store temporary data,that should avaialbel only as long the user is on the current page.
+
+
+
 
 
 
